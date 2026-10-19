@@ -447,7 +447,7 @@ def build_ui():
                     username = gr.Textbox(label="Remote username · optional when password is blank", value=settings["username"])
                     password = gr.Textbox(label="Remote password · optional", type="password")
                     save_phone = gr.Button("Save phone settings")
-                    access_note = gr.Markdown(phone_status())
+                    access_note = gr.Markdown(phone_status(), elem_id="ggf-phone-status")
                     save_note = gr.Markdown()
                     phone_timer = gr.Timer(3)
                     gr.Markdown("### App controls")
